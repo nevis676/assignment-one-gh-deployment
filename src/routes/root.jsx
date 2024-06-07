@@ -24,7 +24,7 @@ export default function Root() {
 function Footer() {
     const FooterElement = ({ d }) => {
         return (
-            <Link to={d.link} className={`text-2xl sm:text-3xl lg:text-6xl flex h-1/3 items-center ${d.side ?? 'flex-row-reverse'}`}><m.span className={`mx-2 mt-1 w-4 h-4 lg:mx-8 lg:h-10 lg:mt-2 lg:w-10 ${d.text ? 'bg-text' : 'bg-transparent'} rounded-full`} />{d.text}</Link>
+            <Link to={d.link} className={`text-2xl sm:text-3xl lg:my-4 lg:text-4xl flex h-1/3 items-center ${d.side ?? 'flex-row-reverse'}`}><m.span className={`mx-2 mt-1 w-4 h-4 lg:mx-8 lg:h-7 lg:mt-2 lg:w-7 ${d.text ? 'bg-text' : 'bg-transparent'} rounded-full`} />{d.text}</Link>
         )
     }
 

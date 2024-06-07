@@ -15,47 +15,47 @@ import Links from './routes/links';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/assignment-one-gh-deployment/',
     element:
       <AnimatePresence initial={false}>
-        <Root key={'/'} />
+        <Root key={'/assignment-one-gh-deployment/'} />
       </AnimatePresence>,
     errorElement: <Error />,
     children: [
       {
-        path: '/',
+        path: '/assignment-one-gh-deployment/',
         element:
           <AnimatePresence initial={false} >
-            <Home key={'/'} />
+            <Home key={'/assignment-one-gh-deployment/'} />
           </AnimatePresence>
       },
       {
-        path: "/workhistory",
+        path: "/assignment-one-gh-deployment/workhistory",
         element:
           <AnimatePresence initial={false} >
-            <WorkHistory key={'/workhistory'} />
+            <WorkHistory key={'/assignment-one-gh-deployment/workhistory'} />
           </AnimatePresence>
       },
       {
-        path: "/projects",
+        path: "/assignment-one-gh-deployment/projects",
         element:
-         <AnimatePresence inital={false}>
-            <Projects key ={'/projects'} />
-         </AnimatePresence>
+          <AnimatePresence inital={false}>
+            <Projects key={'/assignment-one-gh-deployment/projects'} />
+          </AnimatePresence>
       },
       {
-        path: "/about",
+        path: "/assignment-one-gh-deployment/about",
         element:
-        <AnimatePresence initial={false}>
-          <About key={'/about'}/>
-        </AnimatePresence>
+          <AnimatePresence initial={false}>
+            <About key={'/assignment-one-gh-deployment/about'} />
+          </AnimatePresence>
       },
       {
-        path: "/links",
+        path: "/assignment-one-gh-deployment/links",
         element:
-        <AnimatePresence initial={false}>
-          <Links key={'/links'}/>
-        </AnimatePresence>
+          <AnimatePresence initial={false}>
+            <Links key={'/assignment-one-gh-deployment/links'} />
+          </AnimatePresence>
       },
     ]
   },
@@ -71,7 +71,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 function Error() {
   return (
     <>
-      <p>Error</p>
+      <div className="h-screen w-screen flex">
+        <h1>Sorry, it looks like we're having troule displaying this page.</h1>
+      </div>
     </>
   )
 }

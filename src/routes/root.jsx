@@ -31,14 +31,14 @@ function Footer() {
     return (
         <>
             <div id="left-side-footer" className=" flex-col h-full content-between w-1/2">
-                <FooterElement d={{ text: "home", side: "left", link: "/" }} />
-                <FooterElement d={{ text: "work history", side: "left", link: "/workhistory" }} />
-                <FooterElement d={{ text: "projects", side: "left", link: "/projects" }} />
+                <FooterElement d={{ text: "home", side: "left", link: "/assignment-one-gh-deployment/" }} />
+                <FooterElement d={{ text: "work history", side: "left", link: "/assignment-one-gh-deployment/workhistory" }} />
+                <FooterElement d={{ text: "projects", side: "left", link: "/assignment-one-gh-deployment/projects" }} />
             </div>
             <div id="right-side-footer" className=" flex-col h-full content-evenly text-right w-1/2">
-                <FooterElement d={{ text: "about me", link: "/about" }} />
+                <FooterElement d={{ text: "about me", link: "/assignment-one-gh-deployment/about" }} />
                 <FooterElement d={{ }} />
-                <FooterElement d={{ text: "links", link: "/links" }} />
+                <FooterElement d={{ text: "links", link: "/assignment-one-gh-deployment/links" }} />
             </div>
         </>
     )
